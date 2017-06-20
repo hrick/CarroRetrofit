@@ -21,8 +21,9 @@ public class MainActivity extends AppCompatActivity {
         carroApi.listarTodos().enqueue(new Callback<List<Carro>>() {
             @Override
             public void onResponse(Call<List<Carro>> call, Response<List<Carro>> response) {
-                for (Carro carro : response.body()){
-                    Log.i("CARRO", carro.getMarca());
+                for (Carro carro : response.body()) {
+                    if (carro.getMarca() != null)
+                        Log.i("CARRO", carro.getMarca());
                 }
             }
 

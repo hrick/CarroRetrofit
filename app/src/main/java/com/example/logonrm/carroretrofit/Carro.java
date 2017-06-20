@@ -1,5 +1,7 @@
 package com.example.logonrm.carroretrofit;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by logonrm on 19/06/2017.
  */
